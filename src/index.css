@@ -1,0 +1,75 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primaryColor: #40196d;
+  --lightBlueColor: #1dcbef;
+  --blackColor: #000;
+  --successColor: #18864b;
+  --negativeColor: #f7685b;
+  --textColor: #636369;
+  --whiteColor: #fff;
+  --whiteAlt: #fff;
+  --darkAlt: #000;
+  --offWhite: #f9f9f9;
+  --offWhiteTrans: hsla(228, 7%, 87%, 0.3);
+  --borderOff: hsla(228, 7%, 87%, 0.5);
+  --offText: rgba(0, 0, 0, 0.5);
+  --bgOffset: #f4f4f4;
+  --placeHolder: #636369;
+  --offBlue: #eff1ff;
+  --boxShadow: rgba(64, 25, 109, 0.07);
+  --offBlueTran: rgba(223, 227, 255, 0.3);
+  --primaryAlt: #40196d;
+  --offGreen: rgba(72, 211, 138, 0.5);
+  --ctaOffBlue: rgba(64, 25, 109, 0.3);
+  --overlay: rgba(64, 25, 109, 0.2);
+  --successColorTrans: #dcffec;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 798px) {
+  body,
+  html {
+    font-size: 15px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 800px) {
+  body,
+  html {
+    font-size: 14px !important;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  background-color: var(--whiteAlt);
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: "Mulish", sans-serif;
+}
