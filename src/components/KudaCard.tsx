@@ -8,7 +8,6 @@ import CardIcon4 from "../assets/svgexport-51.svg";
 import CardIcon5 from "../assets/svgexport-52.svg";
 import "../styles/KudaCard.css";
 
-// Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const cardsData = [

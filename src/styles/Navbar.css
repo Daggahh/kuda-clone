@@ -61,12 +61,15 @@
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
+  border: none;
+  background: inherit;
 }
 
 .join-kuda {
   display: flex;
   align-items: center;
   background-color: var(--primaryColor);
+  border: none;
   color: var(--white);
   margin-left: 40px;
   cursor: pointer;

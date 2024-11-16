@@ -32,7 +32,7 @@ const Partners: React.FC = () => {
     <div className="kuda-partners-section">
       <div className="kuda-partners-container">
         <div className="kuda-partners-main">
-          <h1>Don’t just take our word for it</h1>
+          <h1>Our Partners</h1>
 
           <div className="kuda-partners-icon">
             <div className="kuda-partners-icon-wrap">

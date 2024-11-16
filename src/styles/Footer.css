@@ -1,0 +1,173 @@
+.kuda-footer {
+  padding-top: 5% !important;
+  padding-bottom: 1.5rem !important;
+  margin-bottom: 3rem !important;
+  border-top: 1px solid rgba(223, 227, 255, 0.5);
+  margin-top: 80px;
+}
+
+.kuda-footer .footer-container {
+  max-width: 1180px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.kuda-footer--nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kuda-footer--col {
+  flex: 1;
+  width: 20%;
+}
+
+.kuda-footer--col:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-header {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.kuda-footer--menu {
+  margin-top: 20px;
+  color: var(--blackColor) !important;
+  list-style: none;
+}
+
+.kuda-footer--menu li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.kuda-footer--menu li {
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+.kuda-footer--menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-download {
+  padding-bottom: 0.5rem !important;
+  margin-bottom: 1.5rem;
+}
+
+.footer-download-buttons {
+  display: flex;
+  margin-top: 4.5rem;
+  gap: 10px;
+}
+
+.kuda-web {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.kuda-web:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.footer-product {
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: var(--primaryColor);
+}
+
+.footer-contact--information {
+  display: flex;
+  justify-content: space-between;
+  margin: 4.3rem 0;
+}
+
+.information-col:not(:last-child) {
+  margin-right: 30px;
+}
+
+.information-col {
+  width: 33.33%;
+}
+
+.other-info {
+  margin-top: 15px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-direction {
+  text-decoration: underline;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.kuda-social-icons {
+  margin-top: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.kuda-social-icons a {
+  height: 100%;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.other-info p {
+  font-size: 0.875rem;
+  max-width: 200px;
+  line-height: 1.5;
+}
+
+.color-black {
+  color: var(--blackColor) !important;
+}
+
+.kuda-footer--conditions p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--textColor);
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+@media (min-width: 576px) {
+  .footer-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

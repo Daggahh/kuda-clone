@@ -54,9 +54,9 @@ const Navbar: React.FC = () => {
         </div>
 
         <div className="navbar-right">
-          <div className="sign-in">Sign In</div>
+          <button className="sign-in">Sign In</button>
 
-          <div className="join-kuda">Join Kuda</div>
+          <button className="join-kuda">Join Kuda</button>
 
           <div className="menu-icon">
             <img src={nigeriaIcon} alt="Nigeria Icon" />

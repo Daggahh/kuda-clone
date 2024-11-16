@@ -1,0 +1,76 @@
+.more-text h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 900;
+  color: var(--primaryColor);
+  font-size: 36px;
+  line-height: 1.38;
+}
+
+.more-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+
+.more-card {
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.more-card-items {
+  margin-bottom: 20px;
+  width: calc(33.33% - 13px);
+  background-color: var(--whiteColor);
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+  padding: 22px 25px;
+}
+
+.more-card-icon {
+  margin-bottom: 15px;
+}
+
+.more-info a {
+  align-items: center !important;
+  display: flex !important;
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.more-info a p {
+  font-family: Mulish;
+  font-size: 24px;
+  line-height: 30.12px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  color: var(--primaryColor);
+  font-weight: 900;
+}
+
+.more-info .sub-text {
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--blackColor);
+}
+
+.more-card .info-link {
+  cursor: pointer;
+  display: inline-flex !important;
+  font-weight: 700;
+  margin-top: 26px;
+  text-decoration: underline;
+  color: var(--primaryColor);
+  align-items: center;
+}
+
+.more-card .arrow-right-icon {
+  margin-top: 6px;
+}
