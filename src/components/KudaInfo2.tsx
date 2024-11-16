@@ -19,9 +19,9 @@ const KudaInfo2: React.FC = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".kuda-info2-container",
-          start: "top 80%", // Trigger animation when the top of the container is 80% into the viewport
-          end: "bottom 20%", // Animation ends when the bottom of the container reaches 20%
-          toggleActions: "play none none none", // Actions: play, pause, resume, reset
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
         },
       }
     );

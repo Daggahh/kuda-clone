@@ -58,6 +58,10 @@
   margin-top: 2px;
 }
 
+.info-link:hover .arrow-right-icon {
+  transform: translateX(5px);
+}
+
 .info1-right {
   width: 55%;
 }

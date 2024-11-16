@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import info6img from "../assets/svgexport-1-img6.svg";
 import arrowright from "../assets/svgexport-53.svg";
-import info5img from "../assets/svgexport-1-img5.svg";
-import "../styles/Kudainfo5.css";
+import "../styles/Kudainfo6.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const KudaInfo5: React.FC = () => {
+const Kudainfo6: React.FC = () => {
   useEffect(() => {
     const animation = gsap.fromTo(
-      ".info5-left",
-      { opacity: 0, y: 50 },
+      ".info6-right",
+      { opacity: 0, y: -50 },
       {
         opacity: 1,
         y: 0,
@@ -19,7 +19,7 @@ const KudaInfo5: React.FC = () => {
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: ".kuda-info3-container",
+          trigger: ".kuda-info6-container",
           start: "top 80%",
           end: "bottom 20%",
           toggleActions: "play none none none",
@@ -34,15 +34,15 @@ const KudaInfo5: React.FC = () => {
 
   useEffect(() => {
     gsap.fromTo(
-      ".info5-right",
-      { x: 200, opacity: 0 },
+      ".info6-left",
+      { x: -200, opacity: 0 },
       {
         x: 0,
         opacity: 1,
         duration: 1.5,
         ease: "bounce.out",
         scrollTrigger: {
-          trigger: ".info5-right",
+          trigger: ".info6-left",
           start: "top 80%",
           toggleActions: "play none none none",
         },
@@ -51,31 +51,29 @@ const KudaInfo5: React.FC = () => {
   }, []);
 
   return (
-    <section className="kuda-info5-container info-container">
-      <div className="kudainfo5">
-        <div className="info5-left">
-          <div className="info5-left-wrap">
-            <h1>We’re always happy to help you.</h1>
+    <section className="kuda-info6-container info-container">
+      <div className="kudainfo6">
+        <div className="info6-left">
+          <div className="kuda-info6-img">
+            <img src={info6img} alt="Kuda App Preview" />
+          </div>
+        </div>
+
+        <div className="info6-right">
+          <div className="info6-right-wrap">
+            <h1> Fees as clear as glass.</h1>
 
             <p>
-              You can chat with us on the app, slide into our DMs, tweet, leave
-              an Instagram comment, send an email or call. However you choose to
-              reach out, there’ll always be a friendly person there to make your
-              life easy.
+              We’re serious about free banking, and we will never, ever charge
+              you for anything without your consent.
             </p>
 
             <a href="#" className="info-link">
-              <span className="open-acc">Get Help</span>
+              <span className="open-acc">See all our fees</span>
               <span className="arrow-right-icon">
                 <img src={arrowright} alt="arrow-right-icon" />
               </span>
             </a>
-          </div>
-        </div>
-
-        <div className="info5-right">
-          <div className="kuda-info5-img">
-            <img src={info5img} alt="Kuda App Preview" />
           </div>
         </div>
       </div>
@@ -83,4 +81,4 @@ const KudaInfo5: React.FC = () => {
   );
 };
 
-export default KudaInfo5;
+export default Kudainfo6;

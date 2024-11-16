@@ -20,9 +20,9 @@ const KudaInfo1: React.FC = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".kuda-info-container",
-          start: "top 80%", // Trigger animation when the top of the container is 80% into the viewport
-          end: "bottom 20%", // Animation ends when the bottom of the container reaches 20%
-          toggleActions: "play none none none", // Actions: play, pause, resume, reset
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -73,7 +73,7 @@ const KudaInfo1: React.FC = () => {
               money moves.
             </p>
 
-            <a href="#">
+            <a href="#" className="info-link">
               <span className="open-acc">Open An Account in Minutes</span>
               <span className="arrow-right-icon">
                 <img src={arrowright} alt="arrow-right-icon" />

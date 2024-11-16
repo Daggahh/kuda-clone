@@ -1,0 +1,86 @@
+.kuda-partners-section {
+  background: #fbfbfb;
+  margin-top: 7%;
+  padding-bottom: 7%;
+  padding-top: 8%;
+
+  left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
+}
+
+.kuda-partners-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.kuda-partners-main h1 {
+  color: var(--primaryColor);
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.38;
+  text-align: center;
+}
+
+.kuda-partners-icon-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 6%;
+  width: 100%;
+}
+
+.kuda-partners-icon-wrap a {
+  display: flex;
+  text-align: center;
+}
+
+.kuda-partners-icon-wrap a img {
+  cursor: pointer;
+  filter: contrast(120%) grayscale(0%) brightness(100%);
+  -webkit-filter: contrast(120%) grayscale(0%) brightness(100%);
+  transition: filter 0.2s;
+  -webkit-transition: filter 0.2s;
+  width: auto;
+}
+
+.kuda-partners-icon-wrap a img:hover {
+  filter: contrast(100%) grayscale(100%) brightness(120%);
+  -webkit-filter: contrast(100%) grayscale(100%) brightness(120%);
+}
+
+@media (min-width: 576px) {
+  .kuda-partners-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kuda-partners-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 992px) {
+  .kuda-partners-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .kuda-partners-container {
+    max-width: 1180px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
