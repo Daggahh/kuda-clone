@@ -39,27 +39,8 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 798px) {
-  body,
-  html {
-    font-size: 15px !important;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 800px) {
-  body,
-  html {
-    font-size: 14px !important;
-  }
-}
-
 body,
 html {
-  height: 100%;
   background-color: var(--whiteAlt);
 }
 
@@ -72,4 +53,59 @@ h2,
 h3,
 p {
   font-family: "Mulish", sans-serif;
+}
+
+.kuda-main-container {
+  min-height: calc(100vh - 120px);
+  transform: translateY(0) !important;
+  margin-top: 70px;
+  padding: 70px 40px 63px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 798px) {
+  body,
+  html {
+    font-size: 15px !important;
+  }
+
+  .kuda-main-container {
+    margin-top: 65px !important;
+    padding: 48px 40px 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 800px) {
+  body,
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .kuda-main-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kuda-main-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 992px) {
+  .kuda-main-container {
+    max-width: calc(100% - 25px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .kuda-main-container {
+    max-width: 1180px;
+  }
 }

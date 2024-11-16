@@ -1,0 +1,48 @@
+.kuda-card-container {
+  margin-top: 50px;
+  color: var(--primaryColor);
+}
+
+.kuda-card-main-1 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+
+.kuda-card-main-2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.kuda-card-main-1 .top {
+  margin-bottom: 20px;
+  width: calc(33.33% - 13px);
+}
+
+.kuda-card {
+  background-color: var(--whiteColor);
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+  padding: 22px 25px;
+  transition: transform 0.3s ease;
+}
+
+.kuda-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  margin-bottom: 15px;
+}
+
+.card-text p {
+  font-size: 0.975rem;
+  font-weight: 900;
+  line-height: 1.5;
+  color: var(--primaryColor);
+  margin: 0;
+}

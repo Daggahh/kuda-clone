@@ -9,7 +9,9 @@ const Navbar: React.FC = () => {
       <div className="navbar">
         <div className="navbar-left">
           <div className="logo">
-            <img src={kudaLogo} alt="kuda-logo" />
+            <a href="/">
+              <img src={kudaLogo} alt="kuda-logo" />
+            </a>
           </div>
 
           <div className="nav-menu">
