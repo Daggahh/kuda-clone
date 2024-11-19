@@ -1,18 +1,18 @@
 import React from "react";
-import kudaLogo from "../assets/svgexport-1.svg";
-import "../styles/Navbar.css";
-import nigeriaIcon from "../assets/nigeriaIcon.svg";
+import kudaLogo from ".../assets/svgexport-1.svg";
+import ".../styles/Navbar.css";
+import nigeriaIcon from ".../assets/nigeriaIcon.svg";
 
 const Navbar: React.FC = () => {
-  return (
-    <nav className="kuda-header">
-      <div className="navbar">
-        <div className="navbar-left">
-          <div className="logo">
-            <a href="/">
-              <img src={kudaLogo} alt="kuda-logo" />
-            </a>
-          </div>
+return (
+<nav className="kuda-header">
+<div className="navbar">
+<div className="navbar-left">
+<div className="logo">
+<a href="/">
+<img src={kudaLogo} alt="kuda-logo" />
+</a>
+</div>
 
           <div className="nav-menu">
             <div className="menu-item">
@@ -64,7 +64,8 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </nav>
-  );
+
+);
 };
 
 export default Navbar;

@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
-import kudaLogo from "../assets/svgexport-1.svg";
-import appleStore from "../assets/iosStore.svg";
-import googlePlay from "../assets/googlePlay.svg";
-import kudaWeb from "../assets/svgexport-70.svg";
-import twitter from "../assets/svgexport-71.svg";
-import instagram from "../assets/svgexport-72.svg";
-import facebook from "../assets/svgexport-73.svg";
-import youtube from "../assets/svgexport-74.svg";
-import jk from "../assets/svgexport-75.svg";
-import linkedin from "../assets/svgexport-76.svg";
+import kudaLogo from "@assets/svgexport-1.svg";
+import appleStore from "@assets/iosStore.svg";
+import googlePlay from "@assets/googlePlay.svg";
+import kudaWeb from "@assets/svgexport-70.svg";
+import twitter from "@assets/svgexport-71.svg";
+import instagram from "@assets/svgexport-72.svg";
+import facebook from "@assets/svgexport-73.svg";
+import youtube from "@assets/svgexport-74.svg";
+import jk from "@assets/svgexport-75.svg";
+import linkedin from "@assets/svgexport-76.svg";
 import gsap from "gsap";
-import "../styles/Footer.css";
+import "@styles/Footer.css";
 
 const Footer: React.FC = () => {
   useEffect(() => {
@@ -187,7 +187,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* footer download buttons */}
+        {/* Footer Download Buttons */}
         <div className="footer-download">
           <div className="footer-download-buttons">
             <div className="app-store">
@@ -282,7 +282,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* footer-conditions */}
+        {/* Footer-Conditions */}
         <div className="kuda-footer--conditions">
           <p className="mb-4">
             *Kuda Customers get 25 free transfer to other banks every month.

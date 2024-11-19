@@ -1,5 +1,5 @@
 import "./index.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero";
 import KudaCard from "./components/KudaCard";
 import KudaInfo1 from "./components/KudaInfo1";

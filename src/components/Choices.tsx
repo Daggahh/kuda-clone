@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
-import kudaLogo from "../assets/svgexport-1.svg";
-import no from "../assets/svgexport-60.svg";
-import yes from "../assets/svgexport-61.svg";
-import emoji1 from "../assets/svgexport-62.svg";
-import emoji2 from "../assets/svgexport-63.svg";
-import "../styles/Choices.css";
+import kudaLogo from "@assets/svgexport-1.svg";
+import no from "@assets/svgexport-60.svg";
+import yes from "@assets/svgexport-61.svg";
+import emoji1 from "@assets/svgexport-62.svg";
+import emoji2 from "@assets/svgexport-63.svg";
+import "@styles/Choices.css";
 
 const choicesData = [
   {

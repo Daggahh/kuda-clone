@@ -1,0 +1,111 @@
+.dropdown-menu {
+  z-index: 1 !important;
+  display: block !important;
+  padding-top: 0;
+  position: absolute;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  width: max-content;
+  left: 0;
+  top: 44px !important;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+}
+
+.menu-item:hover .dropdown-menu,
+.dropdown-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.kuda-dropdown-menu {
+  min-width: 230px;
+  background: #fff;
+  border: 1px solid hsla(228, 7%, 87%, 0.5);
+  border-radius: 5px;
+  box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
+  padding: 20px 0;
+  white-space: nowrap;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.kuda-dropdown-menu li {
+  margin: 0 !important;
+  padding: 0 26px;
+}
+
+.menu-link:hover .menu-link-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-link:hover .nav-link-text {
+  color: #40196d;
+  cursor: pointer;
+}
+
+.kuda-dropdown-menu .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.drop-min--width {
+  min-width: 230px;
+  padding-bottom: 1.5rem !important;
+  padding-top: 1.5rem !important;
+  list-style: none;
+}
+
+.bg-offwhite {
+  background-color: #f9f9f9;
+}
+
+.nav-list-item {
+  margin: 0 !important;
+  padding: 0 26px;
+}
+
+.nav-list-item .menu-link {
+  align-items: center;
+  border-radius: 5px;
+  color: #000;
+  display: inline-flex;
+  font-size: 0.875rem !important;
+  font-weight: 500;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.kuda-dropdown-menu li .menu-link {
+  align-items: center;
+  border-radius: 5px;
+  color: #000;
+  display: inline-flex;
+  font-size: 0.875rem !important;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.menu-link-icon {
+  display: flex;
+  margin-right: 15px;
+}
+
+.nav-link-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.text-xs {
+  font-size: 0.69rem;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 0.25rem !important;
+}
