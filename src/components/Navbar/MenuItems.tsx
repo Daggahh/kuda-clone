@@ -15,7 +15,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ title, links, subSections }) => {
 
   const handleMouseEnter = () => setIsOpen(true);
   const handleMouseLeave = () => setIsOpen(false);
-  const handleClick = () => setIsOpen(true);
+  const handleClick = () => setIsOpen((prevState) => !prevState);
 
   return (
     <>

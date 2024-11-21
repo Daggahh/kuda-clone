@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className="kuda-entire-wrap">
       <Navbar />
       <div className="kuda-main-container">
         <Hero />

@@ -1,0 +1,117 @@
+.dropdown-menu-2 {
+  z-index: 1 !important;
+  display: block !important;
+  padding-top: 0;
+  position: absolute;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  width: max-content;
+  right: 50px;
+  top: 50px !important;
+
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Remove visibility */
+  opacity: 0;
+  visibility: hidden; /* Initially hidden */
+  transform: translateY(-10px);
+}
+
+.menu-icon:hover .dropdown-menu-2,
+.dropdown-menu-2:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu-icon.active {
+  z-index: 100;
+}
+
+.kuda-global-menu {
+  background: #eff1ff;
+  border: 1px solid hsla(228, 7%, 87%, 0.5);
+  border-radius: 5px;
+  box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
+  overflow: hidden;
+  display: flex !important;
+}
+
+.global-menu-wrap {
+  max-width: 300px;
+  padding: 35px;
+}
+
+.close-modal {
+  cursor: pointer;
+  left: 10px;
+  position: absolute;
+  top: 12px;
+}
+
+.global-illustration {
+  margin-bottom: 20px;
+}
+
+.text-menu {
+  align-items: center;
+  color: var(--blackColor) !important;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.no-mb {
+  margin-bottom: 0;
+}
+
+.link-decoration {
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-flex !important;
+  font-weight: 700;
+  margin-top: 26px;
+  color: var(--primaryColor);
+}
+
+.country-dropdown {
+  background: #fff;
+  border: 1px solid hsla(228, 7%, 87%, 0.5);
+  border-radius: 5px;
+  box-shadow: 15px 30px 40px rgba(64, 25, 109, 0.07);
+  padding: 20px 0;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.country-dropdown li {
+  margin: 0 !important;
+  padding: 0 26px;
+}
+
+.country-dropdown li:nth-child(2) {
+  background-color: rgba(151, 151, 151, 0.1);
+}
+
+.country-dropdown .menu-link {
+  width: 100%;
+}
+
+.country-dropdown .menu-link {
+  /* justify-content: space-between; */
+  width: 100%;
+}
+
+.country-dropdown .coming-soon {
+  margin-left: 20px;
+}
+.coming-soon {
+  background: #fff;
+  border: 1px solid #dfe3ff;
+  border-radius: 4px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.06);
+  color: #40196d;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 9px;
+  padding: 4px 5px;
+}

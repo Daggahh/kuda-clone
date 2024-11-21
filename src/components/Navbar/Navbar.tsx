@@ -31,7 +31,13 @@ import virtual from "@assets/svgexport-28.svg";
 import BL from "@assets/svgexport-29.svg";
 import sendM from "@assets/svgexport-30.svg";
 import BP from "@assets/svgexport-31.svg";
+import global from "@assets/svgexport-34.svg";
+import uk from "@assets/svgexport-35.svg";
+import canada from "@assets/svgexport-36.svg";
+import ghana from "@assets/svgexport-37.svg";
+import uganda from "@assets/svgexport-38.svg";
 import "@styles/Navbar.css";
+import MenuItems2 from "./Menuitems2";
 
 const Navbar: React.FC = () => {
   const personalLinks = [
@@ -106,6 +112,15 @@ const Navbar: React.FC = () => {
     { text: "Self Help" },
   ];
 
+  const countryIconlinks = [
+    { icon: <img src={global} alt="" />, text: "Global" },
+    { icon: <img src={nigeriaIcon} alt="" />, text: "Nigeria" },
+    { icon: <img src={uk} alt="" />, text: "United Kingdom" },
+    { icon: <img src={canada} alt="" />, text: "Canada" },
+    { icon: <img src={ghana} alt="" />, text: "Ghana", text2: "Coming Soon" },
+    { icon: <img src={uganda} alt="" />, text: "Uganda", text2: "Coming Soon" },
+  ];
+
   return (
     <nav className="kuda-header">
       <div className="navbar">
@@ -139,9 +154,7 @@ const Navbar: React.FC = () => {
         <div className="navbar-right">
           <button className="sign-in">Sign In</button>
           <button className="join-kuda">Join Kuda</button>
-          <div className="menu-icon">
-            <img src={nigeriaIcon} alt="Nigeria Icon" />
-          </div>
+          <MenuItems2 links={countryIconlinks} />
         </div>
       </div>
     </nav>
