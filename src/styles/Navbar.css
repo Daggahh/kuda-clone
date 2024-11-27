@@ -108,11 +108,9 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 
 .menu-icon img {
-  border: 1px solid green;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -123,14 +121,46 @@
   transition: transform 0.3s;
 } */
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 798px) {
-  .kuda-header {
-    height: 65px;
-  }
+.mobile-toggle {
+  display: none;
+  height: 20px;
+  width: 23px;
+}
 
-  .menu-item {
-    margin-right: 42px;
-  }
+.kuda-hamburger {
+  display: inline-block;
+  height: auto;
+  position: relative;
+  top: 3px;
+  width: 23px;
+}
+
+.kuda-hamburger .kuda-hamburger--inner {
+  transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.kuda-hamburger .kuda-hamburger--inner:before {
+  top: -9px;
+  transition: top 75ms ease 0.12s, opacity 75ms ease;
+}
+
+.kuda-hamburger .kuda-hamburger--inner:after,
+.kuda-hamburger .kuda-hamburger--inner:before {
+  background-color: var(--primaryAlt);
+  border-radius: 4px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition-duration: 0.15s;
+  transition-property: transform;
+  transition-timing-function: ease;
+  width: 20px;
+}
+
+.left-margin {
+  height: 42px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) and (max-height: 698px) {
@@ -142,8 +172,43 @@
     height: 58px;
   }
 
-  .menu-item {
+  .menu-icon {
     margin-right: 36px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) and (max-height: 798px) {
+  .kuda-header {
+    height: 65px;
+  }
+
+  .menu-icon {
+    margin-right: 42px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1299px) {
+  .menu-icon {
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-menu,
+  .sign-in,
+  .join-kuda {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+    align-items: center;
+    display: flex;
+  }
+
+  .left-margin {
+    margin-left: auto;
+    margin-right: 17px !important;
   }
 }
 

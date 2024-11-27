@@ -20,7 +20,7 @@ const MenuItems2: React.FC<MenuItems2Props> = ({ links }) => {
       {isOpen && <div className="page-overlay" onClick={closeDropdown}></div>}
 
       <div
-        className={`menu-icon ${isOpen ? "active" : ""}`}
+        className={`menu-icon left-margin ${isOpen ? "active" : ""}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onClick={handleClick}

@@ -155,6 +155,11 @@ const Navbar: React.FC = () => {
           <button className="sign-in">Sign In</button>
           <button className="join-kuda">Join Kuda</button>
           <MenuItems2 links={countryIconlinks} />
+          <div className="mobile-toggle">
+            <div className="kuda-hamburger">
+              <div className="kuda-hamburger--inner"></div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
